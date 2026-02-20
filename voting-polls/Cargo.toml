@@ -1,0 +1,16 @@
+[package]
+name = "voting-polls"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+async-trait = { workspace = true }
+chrono = { workspace = true }
+voting-errors = { path = "../voting-errors" }
+voting-types = { path = "../voting-types" }
+voting-solana = { path = "../voting-solana" }

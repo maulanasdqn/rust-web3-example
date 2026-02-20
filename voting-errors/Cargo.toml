@@ -1,0 +1,10 @@
+[package]
+name = "voting-errors"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axum = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

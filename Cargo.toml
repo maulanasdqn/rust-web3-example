@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "voting-server",
+    "voting-errors",
+    "voting-types",
+    "voting-solana",
+    "voting-polls",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+async-trait = "0.1"
+thiserror = "2"
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+solana-sdk = "2"
+solana-client = "2"
